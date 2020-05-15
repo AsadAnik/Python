@@ -10,7 +10,7 @@ def main():
     else:
         print('b is less then a')
 ##Another Expression for Condition checking...
-    check = "a is less" if a < b else "b is less"
+    check = "a is less, TRUE" if a < b else "b is less, FALSE"
     print(check)
 
 if __name__ == "__main__": main()

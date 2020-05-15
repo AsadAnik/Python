@@ -5,6 +5,7 @@
 class Egg:
     def __init__(self, nameOfOwner = 'Dohn Doe'):
         self.name = nameOfOwner
+
     def getOwner(self):
         return self.name
 
