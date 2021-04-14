@@ -10,3 +10,20 @@
 
 
 ## Program...
+def selectionSort(nList):
+    for fillSlot in range(len(nList) - 1, 0, -1):
+        maxPos = 0
+        for location in range(1, fillSlot+1):
+            if nList[location] > nList[maxPos]:
+                maxPos = location
+
+            temp = nList[fillSlot]
+            nList[fillSlot] = nList[maxPos]
+            nList[maxPos] = temp
+
+            print('Sorting -->> ', nList)
+
+
+unsortedList = [5, 3, 8, 6, 7, 2]
+selectionSort(unsortedList)
+print('Sorted == ', unsortedList)
